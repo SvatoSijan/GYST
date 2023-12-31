@@ -1,0 +1,63 @@
+@keyframes changeFont {
+    0% {
+      font-family: sans-serif;
+      font-size: 75px;
+    }
+
+    95% {
+      font-family: 'Rubik Glitch', sans-serif;
+      font-size: clamp(2rem, 5vw, 4rem);
+    }
+
+  }
+  
+:root{
+    background-color: rgb(16, 31, 46);
+    color: rgb(111, 88, 59);
+}
+h1::after{
+    content: '.....Get Your Shit Together';
+    font-size: x-small;
+    display: block;
+}
+
+h1 {
+    margin: 5%; 
+    animation: changeFont .5s 2;
+    font-size: 75px;
+}
+
+p{
+
+    margin: 5%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: clamp(400px,60vw,70vw);
+    margin-left: calc((100vw - clamp(400px,60vw,70vw))/2);
+    align-content: center;
+    border: 2px solid black;
+}
+.form .heading{
+    font-size: larger;
+    align-self: center;
+    margin-top: 50px;
+}
+.f{
+align-self: center;
+margin-bottom: 50px;
+}
+input {
+    width: 175px; /* Set a specific width */
+    padding: 2px; /* Add padding for better aesthetics */
+    border: 1px solid #ffb1b178; /* Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    outline: none; /* Remove the default input focus outline */
+    margin: 2%;
+    background-color: rgb(34, 58, 82);
+  }
+input>#age{
+    width: 75px;
+}
+  

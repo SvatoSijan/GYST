@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYST</title>
+    <link rel = "stylesheet" href="style.css">
+    <!--following are some fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+    <h1>GYST</h1>
+    <p>     
+        Sometimes, you know you want to change, even have to change, but even knowing that changes nothing. You might think that you will 
+        change gradually, little by little. It sounds possible, even feasible, but you still go back to your old ways. Nothing has changed, 
+        but even then, you feel more like shit.
+        <br><br>
+        What I have found is that the only real way to get out of that state is just to do something. 
+        <strong>THINK</strong> about what you want to be. How you want to behave. How you want YOURSELF to feel about you. <strong>PLAN</strong> how you 
+        would do it. What steps you would take. Then <strong>EXECUTE</strong>.
+        <br><br>
+        Sign up for our webpage. Here you can make the plans. Know what you want. And we will help you execute them.
+    </p>
+
+
+
+
+    <div class="form">
+        <div class="heading">Sign Up Now</div>
+    <form action="/submit" method="post" class="f"><br>
+        <div>
+                    <label for="username">Your Alias - </label>
+                    <input type="text" minlength="1" maxlength="10" required id="username" name="username">
+        </div>
+
+        
+        <div><br>
+                    <label for="age">Your Age - </label>
+                    <input type="number" name="age" id="age" required min="12">
+
+                    <br><label for="pronoun">Your Pronouns - </label>
+                    <select name="" id="pronoun" required>
+                        <option disabled selected value="">...</option>
+                        <option value="him">He/Him</option>
+                        <option value="her">She/Her</option>
+                        <option value="them">They/Them</option>
+                    </select>
+        </div>
+
+
+
+        <div>
+                    <label for="email">Your Email</label>
+                    <input type="email" required id="email" name="email">
+        </div>
+        
+        
+        <div>
+            <label for="password">Set Your Password</label>
+            <input type="password" required id="password" name="password" minlength="8" maxlength="16"><br>
+            <label for="c-password">Confirm Your Password</label>
+            <input type="c-password" required id="c-password" name="c-password">
+        </div>
+
+        <div>
+                    <input type="submit" id="submitButton">
+                    <input type="reset" id="resetB">
+        </div>
+    </form>
+    </div>
+<script src="code.js"></script>
+</body>
+</html>
